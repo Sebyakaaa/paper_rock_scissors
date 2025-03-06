@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <head>
+    <title>Variables</title>
+  </head>
+  <body>
+    <button 
+    onclick="
+      console.log(`Order total: $${total}`);
+      console.log(`Order total: $${tax}`);
+    ">
+      Total
+    </button>
+    <button onclick="
+      total +=5;
+      tax;
+      console.log(`Order total: $${total}`);
+      console.log(`Order total: $${tax}`);">
+      Coffee
+    </button>
+    <button onclick="
+      total += 3;
+      console.log(`Order total: $${total}`)
+      console.log(`Order total: $${tax}`);">
+      Bagle
+    </button>
+    <button onclick="
+      total += 9;
+      console.log(`Order total: $${total}`)
+      console.log(`Order total: $${tax}`);">
+      Soup
+    </button>
+    <button onclick="
+      total = 0;
+      console.log(`Order total: $${total}`)
+      console.log(`Order total: $${tax}`);">
+      Reset
+    </button>
+    <script>
+      let total = 0;
+    </script>
+  </body>
+</html>
